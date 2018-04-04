@@ -12,7 +12,7 @@ echo -e "${GRN} Building gears ${NC}"
 echo -e "${GRN} This may take some time ${NC}"
 apt clean && apt update && apt upgrade && apt dist-upgrade -y
 
-#Scripts
+#Scripts #
 
 #Tools
 apt install scrub #sanitize the trash
