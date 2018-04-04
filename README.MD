@@ -5,7 +5,7 @@ Right now it's pretty basic.
 ## TODO
 - [ ] Install standard user
 - [ ] Add Python and Pip stuff (if needed)
-<p>- [ ] Add git repositories of interest</p>
+- [ ] Add git repositories of interest
 
   
 
