@@ -17,8 +17,14 @@ echo "syntax on" >> /root/.vimrc
 
 #Tools
 apt install scrub #sanitize the trash
-####--Either get the secure_trash.sh file from github or create locally. [http://www.nullsec.us/first-x-things-to-do-after-installing-kali-linux/]
-####-- .Net Core for attacking network protocols: https://www.microsoft.com/net/learn/get-started/linux/debian9
+# Either get the secure_trash.sh file from github or create locally. [http://www.nullsec.us/first-x-things-to-do-after-installing-kali-linux/]
+# .Net Core for attacking network protocols: https://www.microsoft.com/net/learn/get-started/linux/debian9
+
+git clone https://github.com/leebaird/discover /opt/discover/  && cd /opt/discover && ./update.sh #Discover Scripts
+
+#SMBexec no longer seems to be maintained.  Consider removing or finding an alternative.
+git clone https://github.com/brav0hax/smbexec.git /opt/smbexec && cd /opt/smbexec && ./install.sh
+
 
 ## TOR ##
 echo -e "${GRN} Planting onion seeds ${NC}"
