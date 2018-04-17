@@ -9,35 +9,39 @@ NC='\033[0m' # No Color
 
 ### Basic Steps Post-setup
 #Clean, upgrade and update the system.  Should be rolling Kali when complete
-echo -e "${GRN} Building gears ${NC}"
-echo -e "${GRN} This may take some time ${NC}"
-apt clean && apt update && apt upgrade && apt dist-upgrade -y
+echo -e "${YEL} [+] Building gears ${NC}"
+echo -e "${YEL} [+] This may take some time ${NC}"
+echo -e "${PUR} []> Executiung apt clean, update, upgrade, and dist-upgrade"
+apt clean && apt update -y && apt upgrade -y && apt dist-upgrade -y
 
+echo -e "${YEL} [+] Adding syntax highlighting to vim ${NC}"
 echo "syntax on" >> /root/.vimrc
 
 #Tools
+echo -e "${YEL} [+] Installing ${PUR}Scrub ${NC}"
 apt install scrub #sanitize the trash
 # Either get the secure_trash.sh file from github or create locally. [http://www.nullsec.us/first-x-things-to-do-after-installing-kali-linux/]
 # .Net Core for attacking network protocols: https://www.microsoft.com/net/learn/get-started/linux/debian9
 
+echo -e "${YEL} [+] Installing ${PUR}Discover${NC} ${YEL}scripts ${NC}"
 git clone https://github.com/leebaird/discover /opt/discover/  && cd /opt/discover && ./update.sh #Discover Scripts
 
+echo -e "${YEL} [+] Installing ${PUR}Smbexec ${NC}"
 #SMBexec no longer seems to be maintained.  Consider removing or finding an alternative.
 git clone https://github.com/brav0hax/smbexec.git /opt/smbexec && cd /opt/smbexec && ./install.sh
 
 
 ## TOR ##
-echo -e "${GRN} Planting onion seeds ${NC}"
-echo -e "${GRN} Give it a second to grow ${NC}"
+echo -e "${YEL} Planting onion seeds ${NC}"
+echo -e "${YEL} Give it a second to grow ${NC}"
 apt install tor
 
-echo -e "${RED} TOR Install complete ${NC}"
-echo -e "${GRN} Bringin TOR Service ${NC}"
+echo -e "${YEL} TOR Install complete ${NC}"
+echo -e "${PUR} Starting TOR Service ${NC}"
 service tor start
 
-echo -e "${GRN} Installing nethogs ${NC}"
+echo -e "${YEL} Installing nethogs ${NC}"
 apt install nethogs -y
-ls
 
 #Environment Prep
 echo -e "${YEL} Java Env Prep ${NC}"
