@@ -1,5 +1,6 @@
-#Kali Config
-A few scripts to quickly configure Kali after init install
+# Kali Config
+
+A few scripts to prep system
 
 
   
