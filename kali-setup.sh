@@ -14,6 +14,10 @@ echo -e "${YEL} [+] This may take some time ${NC}"
 echo -e "${PUR} []> Executiung apt clean, update, upgrade, and dist-upgrade"
 apt clean && apt update -y && apt upgrade -y && apt dist-upgrade -y
 
+
+echo -e "${YEL} [+] Installing packages:"
+
+
 echo -e "${YEL} [+] Adding syntax highlighting to vim ${NC}"
 echo "syntax on" >> /root/.vimrc
 
@@ -43,7 +47,7 @@ service tor start
 echo -e "${YEL} Installing nethogs ${NC}"
 apt install nethogs -y
 
-#Environment Prep
+#Java
 echo -e "${YEL} Java Env Prep ${NC}"
 wget -O JavaVersion.jsp http://www.java.com/en/download/linux_manual.jsp
 CurrentJava=$(cat JavaVersion.jsp |grep "Download Java software for Linux x64" |grep -v RPM |sort -u |grep -Po '(?<=href=")[^"]*')
@@ -64,3 +68,4 @@ echo -e "${GRN} java env complete ${NC}"
 echo -e "${RED} Check ${BLU}logfile.log${RED} for errors ${NC}"  # I Could just capture all errors and print them when done
 
 ##ENV Stuff
+

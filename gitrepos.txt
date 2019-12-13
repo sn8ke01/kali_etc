@@ -1,0 +1,8 @@
+https://github.com/darkoperator/dnsrecon.git
+https://github.com/robertdavidgraham/masscan.git
+https://github.com/ernw/nmap-parse-output.git
+https://github.com/cheetz/sslScrape.git
+https://github.com/dxa4481/truffleHog.git
+https://github.com/EmpireProject/Empire.git
+https://github.com/TheRook/subbrute.git
+https://github.com/EnableSecurity/wafw00f.git

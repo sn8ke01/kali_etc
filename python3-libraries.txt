@@ -1,0 +1,6 @@
+#Python 3 libraries
+python-masscan
+ndg-httpsclient
+truffleHog
+pefile
+scapy

@@ -1,0 +1,17 @@
+python-pip
+git
+gcc
+make
+libpcap-dev
+kali-tools-top10
+dnsutils
+xmlstarlet
+nmap
+locate
+libpam-google-authenticator
+xsltproc
+rsync
+tcptraceroute
+amass
+jq
+seclists
