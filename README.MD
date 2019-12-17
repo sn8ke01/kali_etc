@@ -1,7 +1,3 @@
 # Kali Config
 
-A few scripts to prep system
-
-
-  
-
+A few scripts to prep a linux system
