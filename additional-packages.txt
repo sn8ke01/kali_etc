@@ -15,3 +15,4 @@ tcptraceroute
 amass
 jq
 seclists
+libxml-compile-perl
