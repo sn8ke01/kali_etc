@@ -11,7 +11,7 @@ NC='\033[0m' # No Color
 #Clean, upgrade and update the system.  Should be rolling Kali when complete
 echo -e "${YEL} [+] Building gears ${NC}"
 echo -e "${YEL} [+] This may take some time ${NC}"
-echo -e "${PUR} []> Executiung apt clean, update, upgrade, and dist-upgrade"
+echo -e "${PUR} [+]${NC} Executing apt clean, update, upgrade, and dist-upgrade"
 apt clean && apt update -y && apt upgrade -y && apt dist-upgrade -y
 
 
